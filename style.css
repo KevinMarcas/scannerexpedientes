@@ -6,6 +6,28 @@
             justify-content: center;
             padding: 20px;
         }
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: #3b82f6; /* azul */
+      color: white;
+      font-weight: bold;
+      font-size: 28px;
+      padding: 15px 0;
+      border: 2px solid #000;
+      margin: 10px auto;
+      width: 80%;
+      border-radius: 5px;
+    }
+
+    .header i {
+      color: #fff;
+      font-size: 30px;
+    }
+
+
 
         .app-container {
             width: 95%;
@@ -136,4 +158,5 @@
             padding: 5px 10px;
             margin-left: 10px;
             cursor: pointer;
+
         }
