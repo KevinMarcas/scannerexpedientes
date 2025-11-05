@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escaner de Expedientes Web</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>ESCANER EXPEDIENTES</h1>
+            <div class="action-buttons">
+                <button id="export-excel-btn">📥 Exportar a Excel</button>
+                <button id="print-pdf-btn">🖨️ Imprimir a PDF</button>
+                <button id="clear-list-btn">🗑️ Limpiar Lista</button>
+            </div>
+        </header>
+
+        <div class="scan-area">
+            
+            <div class="expedient-column column-1">
+                <button class="scan-btn green" data-column="1">⭐ ESCANEAR</button>
+                <div class="header-expedient green-bg">EXPEDIENTES</div>
+                <ul id="list-column-1" class="expedient-list"></ul>
+            </div>
+
+            <div class="expedient-column column-2">
+                <button class="scan-btn blue" data-column="2">⭐ ESCANEAR</button>
+                <div class="header-expedient blue-bg">EXPEDIENTES</div>
+                <ul id="list-column-2" class="expedient-list"></ul>
+            </div>
+
+            <div class="expedient-column column-3">
+                <button class="scan-btn lightblue" data-column="3">⭐ ESCANEAR</button>
+                <div class="header-expedient lightblue-bg">EXPEDIENTES</div>
+                <ul id="list-column-3" class="expedient-list"></ul>
+            </div>
+
+        </div>
+
+        <footer class="app-footer">
+            Página 1
+        </footer>
+    </div>
+
+    <div id="input-modal" class="modal-backdrop" style="display:none;">
+        <div class="modal-content">
+            <p>Microsoft Excel</p>
+            <hr>
+            <p>Ingrese el código:</p>
+            <input type="text" id="scan-input">
+            <div class="modal-actions">
+                <button id="modal-accept-btn">Aceptar</button>
+                <button id="modal-cancel-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
