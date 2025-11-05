@@ -20,6 +20,9 @@
       margin: 10px auto;
       width: 80%;
       border-radius: 5px;
+                  font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
     }
 
     .header i {
@@ -160,3 +163,4 @@
             cursor: pointer;
 
         }
+
