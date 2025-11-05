@@ -7,6 +7,22 @@
             padding: 20px;
         }
 
+        .app-container .app-header .divbr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 28px;
+            padding: 15px 0;
+            
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 5px;
+        }
+
 
         .app-container {
             width: 95%;
@@ -57,9 +73,9 @@
             border-bottom: 2px solid black; 
             border-top: 2px solid black;
         }
-        .green-bg { background-color: #008000; } 
-        .blue-bg { background-color: #0000FF; }
-        .lightblue-bg { background-color: #00FFFF; }
+        .green-bg { background-color: #f1af5d; } 
+        .blue-bg { background-color: #6cf573; }
+        .lightblue-bg { background-color: #3b8ada; }
 
 
         .scan-btn {
@@ -70,9 +86,18 @@
             border: 2px solid #333;
             margin-bottom: 5px;
         }
-        .scan-btn.green { background-color: #90EE90; }
-        .scan-btn.blue { background-color: #ADD8E6; }
-        .scan-btn.lightblue { background-color: #AFEEEE; }
+
+        .scan-btn:hover {
+        background-color: #4CAF50; /* verde más oscuro */
+        color: white;
+        transform: scale(1.05); /* leve aumento */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .scan-btn.green { background-color: #FB8C00; }
+        .scan-btn.blue { background-color: #43A047; }
+        .scan-btn.lightblue { background-color: #1976D2; }
 
 
         .expedient-list {
@@ -137,7 +162,4 @@
             padding: 5px 10px;
             margin-left: 10px;
             cursor: pointer;
-
         }
-
-
